@@ -13,16 +13,14 @@ def duplicate_encode(word):
         for x in lower_word:                                # Her harf için her harfi tarayan ve sayan döngü
             if i == x:
                 counter += 1
-
+    
         if counter > 1:
             stradded = ")"
             newstr += stradded
         else:
             stradded = "("
             newstr += stradded
+    
+    return newstr 
 
-        print("Harf: " + str(i) + ", Counter: " + str(counter) + ", Encode: " + stradded)
-    print("")
-    print("Output: " + newstr)
-
-duplicate_encode("Merhaba")
+print(duplicate_encode("Merhaba"))
